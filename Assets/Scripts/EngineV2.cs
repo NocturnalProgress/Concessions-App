@@ -61,6 +61,8 @@ public class EngineV2 : MonoBehaviour
     {
         applicationCanvasGroup = applicationCanvas.GetComponent<CanvasGroup>();
         setupCanvasGroup = setupCanvas.GetComponent<CanvasGroup>();
+
+        calculateTotalPriceCount = 0;
     }
 
     public void displayAppSetup()
