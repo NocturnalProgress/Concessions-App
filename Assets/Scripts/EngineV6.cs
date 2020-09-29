@@ -427,15 +427,16 @@ public class EngineV6 : MonoBehaviour
             orderButtonGameObject = GameObject.Find("OrderCanvas/OrderScrollView/Viewport/OrderContent/" + itemName);
             instantiatedQuantityInputField = orderButtonGameObject.GetComponentInChildren<TMP_InputField>();
             ItemQuantityToSend = instantiatedQuantityInputField.text;
+            TotalAmountToSend = totalAmountDisplay.text;
 
-            if (index == 0)
-            {
-                TotalAmountToSend = totalAmountDisplay.text;
-            }
-            else
-            {
-                TotalAmountToSend = "";
-            }
+            // if (index == 0)
+            // {
+            //     TotalAmountToSend = totalAmountDisplay.text;
+            // }
+            // else
+            // {
+            //     TotalAmountToSend = "";
+            // }
 
             Debug.Log("Index: " + index + " ItemNameToSend: " + ItemNameToSend + " ItemPriceToSend: " + ItemPriceToSend + " ItemQuantityToSend: " + ItemQuantityToSend + " TotalAmountToSend: " + TotalAmountToSend);
 
